@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PC4U Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <style>
+            #header{
+                margin-bottom: 0px;
+                background-color: #5CDB95;
+                border-radius: 0;
+                color: #05386B;
+B            }
+            #headers{
+                width: 50%;
+                height: 50px;
+                margin-left: 25%;
+                margin-right: 25%;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                padding-top: 10px;
+                border-radius: 5px;
+                text-align: center;
+                color: white;
+                font-family: inherit;
+                background-color: #2b9636; 
+            }
+            #scroll{
+                list-style: none;
+                margin: 0px 0px 10px 0px ;
+                position: fixed;
+            }
+            
+            #scroll li {
+                margin: 5px;
+                background-color: #2b9636;
+                padding: 2px 5px 2px 5px;
+                border-radius: 5px;
+            }
+            .pricetext {
+                float: right;
+	            font-weight:bold;
+	            font-size:1.4em;
+                padding-right: 5px;
+            }
+            .card{
+                margin-bottom: 30px;
+            }
+            .row{
+                margin-bottom: 30px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            a:hover{
+                text-decoration: none;
+                color: darkgray;
+            }
+            @media only screen and (max-width: 980px){
+                #scroll{
+                    position: relative;
+                }
+            }
+        </style>
+    
+    </head>
+    <body>
+        <!--header-->
+        <div class="jumbotron" id="header">
+            <div class="container text-center">
+                <h1>PC4U LOGO</h1>
+                    <a href="index.html"><span class="badge badge-primary ">Mijn PC4U</span></a>
+                    <a href="#"><span class="badge badge-success">Winkelwagen</span></a>
+            </div>
+        </div>
+        <!--navbar-->
+        <nav class="navbar navbar-expand-md bg-success navbar-dark sticky-top">
+        <!-- Brand -->
+           <a class="navbar-brand" href="index.html">PC4U</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="basiscomponenten.html">Basiscomponenten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reparaties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Info</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mijn PC4U</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Winkelwagen</a>
+                </li>
+            </ul>
+        </div> 
+        </nav>
+       <!-- end navbar -->
+        <!--page nav-->
+        <div class="row">
+            <div class="col-sm-2">
+                <ul id="scroll">
+                    <li><a href="#processors">Processors</a></li>
+                    <li><a href="#videokaart">Videokaart</a></li>
+                    <li><a href="#intern">Intern Geheugen</a></li>
+                    <li><a href="#moederbord">Moederbord</a></li>
+                    <li><a href="#behuizing">Behuizing</a></li>
+                    <li><a href="#voedingen">Voedingen</a></li>
+                    <li><a href="#Geheugen">Geheugen</a></li>
+                </ul>
+            </div>
+            
+        <div class="col-sm-8">
+            
+        <!--processor header-->
+        <div id="processors"><a herf="processors">  
+            <div id="headers">
+                <h4>Processors</h4>
+            </div></a>
+        </div>
+            
+        <!--cards precessors-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Intel i7-8700k</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>1151 socket</li>
+                                        <li>Hexa (6) core</li>
+                                        <li>Klok 3,7GHz</li>
+                                        <li>Turbo 4,7GHz</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€399,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Intel i5-7600k</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>1151 socket</li>
+                                        <li>quad core</li>
+                                        <li>Klok 3GHz</li>
+                                        <li>Turbo 4,2GHz</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€199,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Intel G4560</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>1151 socket</li>
+                                        <li>Dual core</li>
+                                        <li>Klok 3,5GHz</li>
+                                        <li>Turbo 4,3GHz</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€68,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+                
+                
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">AMD Threadripper </h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>1920x</li>
+                                        <li>TR4 socket</li>
+                                        <li>(12) core</li>
+                                        <li>Klok 3,5GHz</li>
+                                        <li>Turbo 4GHz</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€549,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">AMD Ryzen 7</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>1700x</li>
+                                        <li>AM4 socket</li>
+                                        <li>Octa (8) core</li>
+                                        <li>Klok 3,4GHz</li>
+                                        <li>Turbo 3,8GHz</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€289,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">AMD Ryzen 3</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>1200</li>
+                                        <li>AM4 socket</li>
+                                        <li>Quad core</li>
+                                        <li>Klok 3,1GHz</li>
+                                        <li>Turbo 3,5GHz</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€68,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>               
+
+            </div>
+        </div>
+            </div> 
+            
+        <!--videokaart header-->
+        <div id="videokaart"><a herf="videokaart">  
+            <div id="headers">
+                <h4>Videokaart</h4>
+            </div></a>
+        </div>
+            
+        <!--cards videokaart-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">GTX 1070 Ti</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>8GB GDDR5</li>
+                                        <li>3x DP</li>
+                                        <li>DVI-I</li>
+                                        <li>HDMI</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€475,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">GTX 1060</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>6GB GDDR5</li>
+                                        <li>3x DP</li>
+                                        <li>DVI-I</li>
+                                        <li>HDMI</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€370,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">GTX 1050 Ti</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>4GB GDDR5</li>
+                                        <li>1x DP</li>
+                                        <li>1x DVI-I</li>
+                                        <li>1x HDMI</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€172,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+                
+                
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">RX VEGA 56</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>8GB</li>
+                                        <li>3x DP</li>
+                                        <li>HDMI</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€520,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Radeon RX 580</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>8GB GDDR5</li>
+                                        <li>2x DP</li>
+                                        <li>DVI-D</li>
+                                        <li>2x HDMI</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€329,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Radeon RX 560</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>4GB GDDR5</li>
+                                        <li>DP</li>
+                                        <li>DVI-D</li>
+                                        <li>HDMI</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€139,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>               
+
+            </div>
+        </div>
+            </div>
+            
+        <!--intern header-->    
+        <div id="intern"><a herf="intern">  
+            <div id="headers">
+                <h4>Intern Geheugen</h4>
+            </div></a>
+        </div>
+            
+        <!--cards intern-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Corsair Vengeance</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>LPX</li>
+                                        <li>16 GB DDR4</li>
+                                        <li>3.000Mhz</li>
+                                        <li>Kit van 2</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€189,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Crusial Ballistix</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>Sport</li>
+                                        <li>8GB DDR4</li>
+                                        <li>2.400Mhz</li>
+                                        <li>kit van 2</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€89,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Kingston HyperX</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>8GB DDR4</li>
+                                        <li>2.666Mhz</li>
+                                        <li>kit van 1</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€172,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        <!--moederbord header-->    
+        <div id="moederbord"><a herf="moederbrod">  
+            <div id="headers">
+                <h4>Moederbord</h4>
+            </div></a>
+        </div>
+            
+        <!--cards moederbord-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">MSI Z370</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>Socket 1151</li>
+                                        <li>ATX</li>
+                                        <li>Z370 chipset</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€178,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Asus Prime</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>B350-plus</li>
+                                        <li>Socket AM4</li>
+                                        <li>ATX</li>
+                                        <li>AMD B350 chipset</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€92,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+            
+                <div class="col-sm-4">
+                    <div class="card" style="">
+                        <img class="card-img-top" src="Images/placeholder-400x300.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Kingston HyperX</h4>
+                        <details>
+                            <summary class="card-title">specs</summary>
+                                <div class="card-text">
+                                    <ul>
+                                        <li>8GB DDR4</li>
+                                        <li>2.666Mhz</li>
+                                        <li>kit van 1</li>
+                                    </ul>
+                                </div>
+                        </details>
+                        <div class="pricetext">€172,-</div>
+                            <a href="#" class="btn btn-success" style="float:left;">In winkelwagen</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+        
+        
+    </body>
+</html>
